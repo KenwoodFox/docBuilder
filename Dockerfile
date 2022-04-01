@@ -9,8 +9,8 @@ ENV APP_NAME=${APP_NAME}
 
 
 # Imported from ci/cd
-RUN sudo apt update
-RUN sudo apt install texlive-latex-recommended texlive-latex-extra texlive-pictures pandoc rename latexmk inkscape imagemagick
+RUN apt update
+RUN apt install texlive-latex-recommended texlive-latex-extra texlive-pictures pandoc rename latexmk inkscape imagemagick
 
 # Reqs
 ADD requirements.txt ${HOME}
